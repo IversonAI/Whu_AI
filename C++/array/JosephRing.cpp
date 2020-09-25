@@ -2,7 +2,7 @@
 #include<cstdlib>
 
 //////////////
-///Ñ­»·Á´±í±íÊ¾///
+///å¾ªç¯é“¾è¡¨è¡¨ç¤º///
 /////////////
 typedef struct node* link;
 
@@ -22,10 +22,10 @@ int main()
 	for (i = 2; i <= N; i++)
 	{
 		x = (x->next = (link)malloc(sizeof(*x)));
-		printf("%d xµÄµØÖ·%d\n", x->item,&(x->item));
+		printf("%d xçš„åœ°å€%d\n", x->item,&(x->item));
 		x->item = i;
 		x->next = t;
-		printf("%d xµÄµØÖ·%d\n", x->item, &(x->item));
+		printf("%d xçš„åœ°å€%d\n", x->item, &(x->item));
 	}
 	while (x!=x->next)
 	{
@@ -42,7 +42,7 @@ int main()
 //#include<iostream>
 //
 //using namespace std;
-// //Ñ­»·Á´±í±íÊ¾
+// //å¾ªç¯é“¾è¡¨è¡¨ç¤º
 //struct Node
 //{
 //	int data;
@@ -53,32 +53,32 @@ int main()
 //{
 //	int n, k, m, i;
 //	Node *p, *q, *head;
-//	cout << "ÊäÈë×ÜÊınµÄÖµ£º";
+//	cout << "è¾“å…¥æ€»æ•°nçš„å€¼ï¼š";
 //	cin >> n;
-//	cout << "ÊäÈëÆğÊ¼±¨ÊıÈËºÅÂëkµÄÖµ£º";
+//	cout << "è¾“å…¥èµ·å§‹æŠ¥æ•°äººå·ç kçš„å€¼ï¼š";
 //	cin >> k;
-//	cout << "ÊäÈëÊıµ½m³öÁĞµÄmµÄÖµ£º";
+//	cout << "è¾“å…¥æ•°åˆ°må‡ºåˆ—çš„mçš„å€¼ï¼š";
 //	cin >> m;
 //
 //
 //	head = (Node*) new Node;
-//	p = head;         //È·¶¨Í·½áµãÓÃÓÃpÖ¸ÏòÍ·½áµã
+//	p = head;         //ç¡®å®šå¤´ç»“ç‚¹ç”¨ç”¨pæŒ‡å‘å¤´ç»“ç‚¹
 //
-//	//ÎªÑ­»·Á´±í¸³Öµ
+//	//ä¸ºå¾ªç¯é“¾è¡¨èµ‹å€¼
 //	for (i = 1; i <= n - 1; i++)
 //	{
 //		p->data = i;
-//		p->pNext = (Node*)new Node;//ÎªÏÂÒ»¸ö½áµãĞÂ½¨ÄÚ´æ
+//		p->pNext = (Node*)new Node;//ä¸ºä¸‹ä¸€ä¸ªç»“ç‚¹æ–°å»ºå†…å­˜
 //		p = p->pNext;
 //	}
 //
-//	p->data = n;//×îºóÒ»¸ö½áµãµ¥¶À´¦Àí
-//	p->pNext = head;//Ö¸ÏòÍ·½áµã£¬ĞÎ³ÉÑ­»·Á´±í
+//	p->data = n;//æœ€åä¸€ä¸ªç»“ç‚¹å•ç‹¬å¤„ç†
+//	p->pNext = head;//æŒ‡å‘å¤´ç»“ç‚¹ï¼Œå½¢æˆå¾ªç¯é“¾è¡¨
 //	p = head;
 //
-//	while (p->data != (p->pNext)->data)//±íÊ¾Ö»Ê£ÏÂÒ»¸ö½áµã
+//	while (p->data != (p->pNext)->data)//è¡¨ç¤ºåªå‰©ä¸‹ä¸€ä¸ªç»“ç‚¹
 //	{
-//		while (p->data != k)//Ñ°ÕÒ±àºÅÎªkµÄ½áµã
+//		while (p->data != k)//å¯»æ‰¾ç¼–å·ä¸ºkçš„ç»“ç‚¹
 //			p = p->pNext;
 //		if (m == 1)
 //		{
