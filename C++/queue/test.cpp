@@ -1,25 +1,41 @@
+#include "arrQueue.h"
 #include<iostream>
-#include"listQueue.h"
 
 using namespace std;
 
 int main() {
-	listQueue lq;
-	for (int i = 0; i <10; i++)
-		lq.enqueue(i*i);
+	arrayQueue aq(-1);
+	//arrayQueue aq(12);//初始化队列
+	printf("%d\n", aq.capacity);
 
-	lq.visit();
-	
-	lq.enqueue(100);
-	cout << lq.getFront()<<"  "<<lq.getRear()<<endl;
+	for (int i = 0; i < 8; i++)
+	{
+		aq.enQueue(i);
+		
+	}
+	//printf("%d\n",aq.isLength());
+	aq.visit();
+	for (int i = 0; i < 8; i++)
+	{
+		aq.enQueue(i);
 
-	cout << lq.length << endl;
-	lq.dequeue();
-	cout << lq.length << endl;
-	lq.visit();
-	lq.clear();
-	cout << lq.length << endl;
+	}
+	aq.visit();
+
+	for (int i = 0; i < 5; i++)
+	{
+		aq.deQueue();
+
+	}
+
+
+	aq.visit();
+	cout<<aq.getHead()<<endl;
+	aq.clear();
+
+	aq.deQueue();
+
+	aq.visit();
 	system("pause");
 	return 0;
-
 }
